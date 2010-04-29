@@ -20,7 +20,7 @@ func NewMessage(source string, name string, value int) *Message {
 }
 
 func (message *Message) String() string {
-    return fmt.Sprintf("Message[source=%s, name=%s, value=%d]", message.Source, message.Name, message.Value)
+    return fmt.Sprintf(`%s said that %s is "%d"`, message.Source, message.Name, message.Value)
 }
 
 /******************************************************************************/
